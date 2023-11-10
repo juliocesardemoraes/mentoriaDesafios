@@ -190,6 +190,12 @@ button:hover {
   grid-template-columns: 1fr 1fr;
   height: 500px;
   overflow-y: auto;
+  justify-items: center;
+}
+
+.post:last-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .flex__responsive {
