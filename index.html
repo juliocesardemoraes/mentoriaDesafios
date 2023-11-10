@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página responsiva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex align__center">
+        <img src="./public/logo__better.svg" alt="logo" />
+        <ul class="flex g-1 links__list">
+          <li>Quizzes</li>
+          <li>Posts</li>
+          <li>Gamificação</li>
+          <li>SandBox</li>
+        </ul>
+        <div class="flex align__center search__bar">
+          <input placeholder="Search..." />
+          <img class="lupa" src="./public/lupa__escura.svg" alt="lupa" />
+        </div>
+        <div class="relative">
+          <img onclick="abrirMenu()" class="menu" src="./public/menu.svg" />
+          <div class="menu__hidden">
+            <ul class="flex flex__column g-1 menu__expanded">
+              <li>Quizzes</li>
+              <li>Posts</li>
+              <li>Gamificação</li>
+              <li>SandBox</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="flex align__center landing__explore">
+        <div class="flex flex__column">
+          <h1>Explore o Universo da Codificação</h1>
+          <p>
+            Com nossa plataforma única, oferecendo desafiantes Quizzes para
+            testar suas habilidades, Posts informativos repletos de dicas
+            práticas, uma experiência de Gameficação envolvente e um Sandbox
+            interativo para experimentação livre.
+          </p>
+        </div>
+        <img
+          class="image__landing"
+          src="./public/logo__big.svg"
+          alt="landing page logo"
+        />
+      </section>
+      <div class="flex align__center flex__column g-1 justify__center">
+        <p>Rolar para baixo</p>
+        <img src="./public/mouse.png" alt="mouse" />
+      </div>
+
+      <section
+        class="white__bg relative quiz__container mt-1 flex justify__center"
+      >
+        <img
+          class="question__image"
+          src="./public/subtract.png"
+          alt="Background"
+        />
+        <div class="question__text">
+          <h2>Quizzes</h2>
+          <p>
+            O Quizz em nosso site é mais do que apenas um desafio de
+            conhecimento; é uma jornada interativa de aprendizado em
+            programação. Teste suas habilidades, resolva quebra-cabeças
+            desafiadores e descubra lacunas em seu conhecimento, tudo enquanto
+            avança por níveis estimulantes. Cada pergunta é cuidadosamente
+            elaborada para aprimorar seu entendimento e oferecer uma experiência
+            educativa envolvente. Esteja preparado para superar desafios e
+            consolidar seu conhecimento de uma maneira divertida e estimulante.
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-4">
+        <h1>Posts</h1>
+        <p>
+          Nossa seção de Posts é como um guia abrangente para explorar o vasto
+          universo da programação. Profundize-se em artigos informativos que
+          abordam desde conceitos fundamentais até as últimas tendências e
+          práticas avançadas. Descubra dicas práticas, insights de especialistas
+          e histórias inspiradoras que não apenas expandirão seu conhecimento
+          técnico, mas também proporcionarão uma visão valiosa sobre a vida de
+          um desenvolvedor. Seja você um iniciante curioso ou um veterano em
+          busca de novas perspectivas, nossos Posts são uma fonte inesgotável de
+          conhecimento para impulsionar sua jornada na programação.
+        </p>
+
+        <div class="post__container">
+          <div class="post">
+            <div class="flex__responsive">
+              <h3>
+                Bye-bye useState & useEffect: Revolutionizing React Development!
+              </h3>
+              <img src="./public/post__image.png" alt="Post image" />
+            </div>
+            <div class="flex space__between">
+              <div class="flex">
+                <p>Lucas Maclean</p>
+                <p>7 min leitura</p>
+              </div>
+              <p>06/10/2023</p>
+            </div>
+            <p class="mt-1">
+              Today, I want to show you an alternative for the useState and
+              useEffect hook in React. (It reduces a lot of boilerplate codes)
+              Many developers continue to use the useState and useEffect hooks
+              to update states, but I have not been fond of this approach. The
+              issue is that it causes the component to mount, remount, and
+              unmount simultaneously, leading to unexpected behavior.
+            </p>
+
+            <button class="mt-1">Leia mais</button>
+          </div>
+          <div class="post">
+            <div class="flex__responsive">
+              <h3>
+                Bye-bye useState & useEffect: Revolutionizing React Development!
+              </h3>
+              <img src="./public/post__image.png" alt="Post image" />
+            </div>
+            <div class="flex space__between">
+              <div class="flex">
+                <p>Lucas Maclean</p>
+                <p>7 min leitura</p>
+              </div>
+              <p>06/10/2023</p>
+            </div>
+            <p class="mt-1">
+              Today, I want to show you an alternative for the useState and
+              useEffect hook in React. (It reduces a lot of boilerplate codes)
+              Many developers continue to use the useState and useEffect hooks
+              to update states, but I have not been fond of this approach. The
+              issue is that it causes the component to mount, remount, and
+              unmount simultaneously, leading to unexpected behavior.
+            </p>
+
+            <button class="mt-1">Leia mais</button>
+          </div>
+          <div class="post">
+            <div class="flex__responsive">
+              <h3>
+                Bye-bye useState & useEffect: Revolutionizing React Development!
+              </h3>
+              <img src="./public/post__image.png" alt="Post image" />
+            </div>
+            <div class="flex space__between">
+              <div class="flex">
+                <p>Lucas Maclean</p>
+                <p>7 min leitura</p>
+              </div>
+              <p>06/10/2023</p>
+            </div>
+            <p class="mt-1">
+              Today, I want to show you an alternative for the useState and
+              useEffect hook in React. (It reduces a lot of boilerplate codes)
+              Many developers continue to use the useState and useEffect hooks
+              to update states, but I have not been fond of this approach. The
+              issue is that it causes the component to mount, remount, and
+              unmount simultaneously, leading to unexpected behavior.
+            </p>
+
+            <button class="mt-1">Leia mais</button>
+          </div>
+          <div class="post">
+            <div class="flex__responsive">
+              <h3>
+                Bye-bye useState & useEffect: Revolutionizing React Development!
+              </h3>
+              <img src="./public/post__image.png" alt="Post image" />
+            </div>
+            <div class="flex space__between">
+              <div class="flex">
+                <p>Lucas Maclean</p>
+                <p>7 min leitura</p>
+              </div>
+              <p>06/10/2023</p>
+            </div>
+            <p class="mt-1">
+              Today, I want to show you an alternative for the useState and
+              useEffect hook in React. (It reduces a lot of boilerplate codes)
+              Many developers continue to use the useState and useEffect hooks
+              to update states, but I have not been fond of this approach. The
+              issue is that it causes the component to mount, remount, and
+              unmount simultaneously, leading to unexpected behavior.
+            </p>
+
+            <button class="mt-1">Leia mais</button>
+          </div>
+          <div class="post">
+            <div class="flex__responsive">
+              <h3>
+                Bye-bye useState & useEffect: Revolutionizing React Development!
+              </h3>
+              <img src="./public/post__image.png" alt="Post image" />
+            </div>
+            <div class="flex space__between">
+              <div class="flex">
+                <p>Lucas Maclean</p>
+                <p>7 min leitura</p>
+              </div>
+              <p>06/10/2023</p>
+            </div>
+            <p class="mt-1">
+              Today, I want to show you an alternative for the useState and
+              useEffect hook in React. (It reduces a lot of boilerplate codes)
+              Many developers continue to use the useState and useEffect hooks
+              to update states, but I have not been fond of this approach. The
+              issue is that it causes the component to mount, remount, and
+              unmount simultaneously, leading to unexpected behavior.
+            </p>
+
+            <button class="mt-1">Leia mais</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
